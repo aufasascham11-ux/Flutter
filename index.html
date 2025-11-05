@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .appbar {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header {
+            background: #e3f2fd;
+            padding: 20px;
+            text-align: center;
+        }
+        .banner {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .menu-item {
+            text-align: center;
+            cursor: pointer;
+        }
+        .menu-item i {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .menu-item:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="appbar">
+        <h2>To-Do List App</h2>
+        <i class="fas fa-bell" onclick="alert('Notifikasi!')"></i>
+    </div>
+    
+    <div class="header">
+        <h1>Halo, Andi</h1>
+    </div>
+    
+    <img src="assets/banner.png" alt="Banner" class="banner">
+    
+    <div class="menu">
+        <div class="menu-item" onclick="window.location.href='profil.html';">
+            <i class="fas fa-user"></i>
+            <p>Profil</p>
+        </div>
+        <div class="menu-item" onclick="alert('Menu Data diklik!')">
+            <i class="fas fa-list"></i>
+            <p>Data</p>
+        </div>
+        <div class="menu-item" onclick="alert('Menu Pengaturan diklik!')">
+            <i class="fas fa-cog"></i>
+            <p>Pengaturan</p>
+        </div>
+    </div>
+</body>
+</html>
